@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Title Page-->
+    <div class="jumbotron container-fluid mt-2 p-2 text-center">
+        <h1>
+            <strong>Weather Dashboard</strong>
+        </h1>
+    </div>
+    <div class="container">
+        <!--Search Bar-->
+        <div class="row">
+            <div class="col-sm-4">
+                <h2><strong>Search for a City:</strong></h2>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control"id="search-city" aria-label="City Search" aria-describedby="search">
+                    <button class="btn bg-primary" id="search"></button>
+                </div>
+
+                <!--Clear Search History-->
+                <button class="btn btn-primary" type="button" id="clear">Clear History</button>
+                <ul class="city-list">
+
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <div class="row ml-2 border border-dark rounded">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2" id="current-city"></h3>
+                        <p>Temperature:<span class="current" id="temperature"></span></p>
+                        <p>Humidity:<span class="current" id="humidity"></span></p> 
+                        <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                        <p>UV index:<span class="current bg-danger rounded py-2 px-2" id="uv-index"></span></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" id="weather-forecast">
+                
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
