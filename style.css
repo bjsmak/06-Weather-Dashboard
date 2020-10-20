@@ -1,0 +1,21 @@
+body {
+    background-color: #3d5a80;
+}
+
+#current-weather, .card {
+    background-color: #98c1d9;
+}
+
+.jumbotron {
+    margin-top: 0;
+    background-color: #e0fbfc;
+}
+
+.cityNames {
+    padding: 5px;
+    margin-top: 5px;
+    list-style: none;
+    border: 2px solid #e0fbfc;
+    border-radius: 3px;
+    color: #e0fbfc;
+}

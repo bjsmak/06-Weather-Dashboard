@@ -66,7 +66,7 @@ function searchFunc(event) {
 }
 
 
-
+//Weather forecast function and Moment JS variable
 var currentDate = moment().format('L');
 function currentWeather(){
 
@@ -90,11 +90,28 @@ function currentWeather(){
         var ln = response.coord.lon;
         var lt = response.coord.lat;
         var uvIndex = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lt + "&lon=" + ln;
+
+
         $.ajax({
             url:uvIndex,
             method: 'GET'
         }).then(function(response){
             $(currentUV).html(response.value);
+            //UV index values matrix
+            if (response.value < 3){
+                $('#uv-index').removeClass('bg-danger');
+                $('#uv-index').removeClass('bg-warning');
+                $('#uv-index').addClass('bg-success');
+            }
+            else if (response.value < 6){
+                $('#uv-index').removeClass('bg-danger');
+                $('#uv-index').removeClass('bg-success');
+                $('#uv-index').addClass('bg-warning');
+            } else {
+                $('#uv-index').removeClass('bg-warning');
+                $('#uv-index').removeClass('bg-success');
+                $('#uv-index').addClass('bg-danger');
+            }
         })
 
         var forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial' + '&appid=' + APIKey;
