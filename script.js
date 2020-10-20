@@ -128,8 +128,9 @@ $(clrBtn).on('click', function(event){
 })
 
 //Allowing past searches to be clicked and used as searches
-$("li.cityNames").click(function(){
-    city = $(this).html();
+$(document).on('click', ".cityNames", function(event){
+    if ($(event.target).is('li')){
+    city = $(this).text();
     currentWeather();
-    console.log(city);
-    })
+    }
+})
