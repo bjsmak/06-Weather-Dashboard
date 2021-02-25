@@ -1,4 +1,4 @@
-# 06-Weather-Dashboard
+Weather-Dashboard
 
 <a href ="https://bjsmak.github.io/06-Weather-Dashboard/">LINK TO APPLICATION HERE</a><p>
   
