@@ -1,6 +1,6 @@
 Weather-Dashboard
 
-<a href ="https://bjsmak.github.io/06-Weather-Dashboard/">LINK TO APPLICATION HERE</a><p>
+<a href ="https://bjsmak.github.io/Weather-Dashboard/">LINK TO APPLICATION HERE</a><p>
   
 The purpose of this application is to use server-side APIs to display the weather.<p>
 By utilizing OpenWeatherMapAPI, I was able to display the forecast for the current day as well as the 5-day forecast using ajax calls through jQuery. Dates and formats were done utilizing Moment JS.<p>
